@@ -1,16 +1,19 @@
-* {
+*,
+*::before, 
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #777777;
-  padding: 30px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 header {
@@ -59,7 +62,7 @@ header {
 
 .heading-primary-main {
   display: block;
-  font-size: 62px;
+  font-size: 6.2rem;
   font-weight: 400;
   letter-spacing: 15px;
   animation: moveInLeft 1s ease-out;
@@ -67,7 +70,7 @@ header {
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 18px;
 }
@@ -80,7 +83,7 @@ header {
   padding: 15px 40px;
   display: inline-block;
   border-radius: 100px;
-  font-size: 16px;
+  font-size: 1.6rem;
   position: relative;
   animation: moveInBottom 1s ease-out;
 }
@@ -180,4 +183,8 @@ header {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+html{
+  font-size: 32.5%;
 }
